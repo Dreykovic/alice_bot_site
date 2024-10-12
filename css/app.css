@@ -407,7 +407,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     }
 
     .app-about .app-about-cont p {
-        color: #adb5bd;
+        color: #262223ff;
     }
 
     .app-about img.third {
@@ -512,7 +512,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     }
 
     .our-process .service-desc-cont p {
-        color: #adb5bd;
+        color: #262223ff;
     }
 
 
@@ -538,7 +538,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         right: 2px;
         font-size: 25px;
         padding: 4px 20px;
-        background: #fff;
+        background: #E4E4E4ff;
         line-height: 50px;
         top: 2px;
         color: #EC0000ff;
@@ -546,7 +546,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
     .faq .card .card-body {
         background: #E4E4E4ff;
-        color: #adb5bd;
+        color: #262223ff;
     }
 
     @media (min-width: 767px) and (max-width: 991px) {
@@ -651,7 +651,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
     .contact .contact-cont h5 {
         text-align: center;
-        color: #adb5bd;
+        color: #262223ff;
     }
 
 
