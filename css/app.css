@@ -243,7 +243,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             font-weight: 600;
             padding: 0.75em 0;
             letter-spacing: 0px;
-            color: #6c757d;
+            color: #262223ff;
             font-family: 'Roboto', sans-serif;
         }
         #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link a {
@@ -265,7 +265,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     }
 
     section .heading h1 {
-        color: #6c757d;
+        color: #262223ff;
     }
 
     section .heading .bord-bot {
@@ -276,7 +276,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
     section .heading p {
         margin-top: 10px;
-        color: #6c757d;
+        color: #262223ff;
         max-width: 400px;
         margin: 20px auto;
     }
@@ -403,7 +403,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     }
 
     .app-about .app-about-cont h3 {
-        color: #6c757d;
+        color: #262223ff;
     }
 
     .app-about .app-about-cont p {
@@ -508,7 +508,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     .our-process .service-desc-cont h5 {
         font-size: 18px;
         text-transform: none;
-        color: #6c757d;
+        color: #262223ff;
     }
 
     .our-process .service-desc-cont p {
@@ -666,5 +666,26 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
     .footer .top-footer p {
         margin: 0;
-        color: #6c757d;
+        color: #262223ff;
     }
+    .inclined-div {
+        transform: rotate(-30deg); /* Incline de 30 degrés vers la gauche */
+        height: 200px; /* Hauteur de base */
+        width: 300px; /* Largeur de base */
+    }
+    
+    /* Ajustements pour les écrans plus petits */
+    @media (max-width: 768px) {
+        .inclined-div {
+            height: 150px; /* Réduit la hauteur */
+            width: 250px; /* Réduit la largeur */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .inclined-div {
+            height: 100px; /* Réduit encore la hauteur */
+            width: 200px; /* Réduit encore la largeur */
+        }
+    }
+    
