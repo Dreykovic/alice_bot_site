@@ -494,5 +494,9 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 </style>
 
 <script>
-  document.body.style.overflow = 'hidden';
+ // Empêche le scroll en mobile
+document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+}, { passive: false });
+
 </script>
