@@ -502,7 +502,7 @@ document.addEventListener('touchmove', function(e) {
         let deltaY = Math.abs(touch.pageY - touch.clientY);  // Mouvement vertical
 
         // Empêche le scroll si le mouvement est principalement vertical
-        if (deltaY > deltaX) {
+        if (deltaY < deltaX) {
             e.preventDefault();
         }
     }
