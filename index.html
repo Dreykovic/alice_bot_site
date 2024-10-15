@@ -493,26 +493,3 @@ License URL: https://creativecommons.org/licenses/by/4.0/
   }
 </style>
 
-<script>
-let initialX = null;
-
-document.addEventListener('touchstart', function(e) {
-    // Sauvegarde la position initiale du toucher (axe X)
-    initialX = e.touches[0].clientX;
-}, { passive: false });
-
-document.addEventListener('touchmove', function(e) {
-    if (initialX === null) {
-        return;
-    }
-
-    let currentX = e.touches[0].clientX;
-    let diffX = initialX - currentX;
-
-    // Empêche uniquement le défilement horizontal
-    if (Math.abs(diffX) > 0) {
-        e.preventDefault();
-    }
-}, { passive: false });
-
-</script>
