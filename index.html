@@ -484,12 +484,31 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
 
 <style>
-  body, html {
-      margin: 0;
-      padding: 0;
-  }
-  .masthead {
-      width: 100%;
-  }
+@media (max-width: 768px) {
+    .masthead {
+        width: 100%; /* Prend toute la largeur */
+        padding: 0; /* Élimine les marges et les paddings */
+    }
+
+    .container {
+        width: 100%; /* Assure que le container prend toute la largeur */
+        padding: 0; /* Retire les espaces internes */
+    }
+
+    .row {
+        margin: 0; /* Supprime les marges */
+    }
+
+    .col-lg-7, .col-lg-5 {
+        padding: 0; /* Retire les paddings internes */
+    }
+
+    .img-container img {
+        width: 100%; /* Assure que l'image prend toute la largeur */
+        height: auto; /* Garde l'aspect ratio de l'image */
+    }
+}
+
 </style>
+
 
