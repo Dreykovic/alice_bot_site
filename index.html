@@ -484,12 +484,28 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
 
 <style>
+/* Pour les écrans de mobile (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Ajoute une marge à gauche pour décaler légèrement la navigation */
-    .navbar {
-        margin-right: 300px; /* Ajuste la valeur pour le décalage désiré */
+    body {
+        overflow-x: hidden; /* Empêche le défilement horizontal */
     }
-  }
+
+    .masthead {
+        width: 100vw; /* Assure que la section prend toute la largeur de la vue */
+        position: relative; /* Évite les débordements */
+        left: 0; /* Réinitialise toute position décalée */
+        right: 0; /* Réinitialise toute position décalée */
+        margin: 0; /* Assure qu'il n'y a pas de marges */
+        padding: 0; /* Assure qu'il n'y a pas de paddings */
+    }
+
+    /* Si tu as d'autres éléments à vérifier, tu peux les ajouter ici */
+    .img-fluid {
+        max-width: 100%; /* Assure que les images ne débordent pas */
+        height: auto; /* Ajuste la hauteur automatiquement */
+    }
+}
+
 </style>
 
 
