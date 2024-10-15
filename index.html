@@ -494,17 +494,24 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 </style>
 
 <script>
-document.addEventListener('touchmove', function(e) {
-    // Vérifie si le mouvement est vertical
-    if (e.touches && e.touches.length === 1) {
-        let touch = e.touches[0];
-        let deltaX = Math.abs(touch.pageX - touch.clientX);  // Mouvement horizontal
-        let deltaY = Math.abs(touch.pageY - touch.clientY);  // Mouvement vertical
+let initialX = null;
 
-        // Empêche le scroll si le mouvement est principalement vertical
-        if (deltaY < deltaX) {
-            e.preventDefault();
-        }
+document.addEventListener('touchstart', function(e) {
+    // Sauvegarde la position initiale du toucher (axe X)
+    initialX = e.touches[0].clientX;
+}, { passive: false });
+
+document.addEventListener('touchmove', function(e) {
+    if (initialX === null) {
+        return;
+    }
+
+    let currentX = e.touches[0].clientX;
+    let diffX = initialX - currentX;
+
+    // Empêche uniquement le défilement horizontal
+    if (Math.abs(diffX) > 0) {
+        e.preventDefault();
     }
 }, { passive: false });
 
